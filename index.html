@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>自(ㄗˋ)然(ㄖㄢˊ)小(ㄒㄧㄠˇ)任(ㄖㄣˋ)務(ㄨˋ)闖(ㄔㄨㄤˇ)關(ㄍㄨㄢ)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <h1 class="title">
+      自(ㄗˋ)然(ㄖㄢˊ)小(ㄒㄧㄠˇ)任(ㄖㄣˋ)務(ㄨˋ)闖(ㄔㄨㄤˇ)關(ㄍㄨㄢ) 🧩
+    </h1>
+    <p class="sub">
+      先(ㄒㄧㄢ)玩(ㄨㄢˊ)一(ㄧ)下(ㄒㄧㄚˋ)，再(ㄗㄞˋ)小(ㄒㄧㄠˇ)測(ㄘㄜˋ)驗(ㄧㄢˋ)。
+      你(ㄋㄧˇ)可(ㄎㄜˇ)以(ㄧˇ)慢(ㄇㄢˋ)慢(ㄇㄢˋ)學(ㄒㄩㄝˊ)！
+    </p>
+  </header>
+
+  <main class="wrap">
+    <section class="panel" id="home">
+      <h2 class="h2">選(ㄒㄩㄢˇ)擇(ㄗㄜˊ)世(ㄕˋ)界(ㄐㄧㄝˋ)</h2>
+
+      <div class="worlds">
+        <button class="worldBtn" data-world="plants">
+          植(ㄓˊ)物(ㄨˋ)拼(ㄆㄧㄣ)圖(ㄊㄨˊ)隊(ㄉㄨㄟˋ)
+        </button>
+        <button class="worldBtn" data-world="airwater">
+          空(ㄎㄨㄥ)氣(ㄑㄧˋ)與(ㄩˇ)水(ㄕㄨㄟˇ)超(ㄔㄠ)能(ㄋㄥˊ)力(ㄌㄧˋ)
+        </button>
+        <button class="worldBtn" data-world="animals">
+          動(ㄉㄨㄥˋ)物(ㄨˋ)偵(ㄓㄣ)探(ㄊㄢˋ)社(ㄕㄜˋ)
+        </button>
+        <button class="worldBtn" data-world="force">
+          力(ㄌㄧˋ)量(ㄌㄧㄤˋ)與(ㄩˇ)磁(ㄘˊ)鐵(ㄊㄧㄝˇ)訓(ㄒㄩㄣˋ)練(ㄌㄧㄢˋ)
+        </button>
+      </div>
+
+      <div class="status">
+        <div class="badge" id="starsBadge">星(ㄒㄧㄥ)星(ㄒㄧㄥ)：0</div>
+        <div class="badge" id="progressBadge">闖(ㄔㄨㄤˇ)關(ㄍㄨㄢ)進(ㄐㄧㄣˋ)度(ㄉㄨˋ)：0/4</div>
+      </div>
+
+      <p class="hint">
+        提(ㄊㄧˊ)示(ㄕˋ)：每(ㄇㄟˇ)一(ㄧ)關(ㄍㄨㄢ)都(ㄉㄡ)有(ㄧㄡˇ)「口(ㄎㄡˇ)訣(ㄐㄩㄝˊ)卡(ㄎㄚˇ)」，
+        記(ㄐㄧˋ)住(ㄓㄨˋ)就(ㄐㄧㄡˋ)變(ㄅㄧㄢˋ)強(ㄑㄧㄤˊ)！
+      </p>
+    </section>
+
+    <section class="panel hidden" id="game">
+      <div class="gameTop">
+        <button class="backBtn" id="backBtn">← 回(ㄏㄨㄟˊ)到(ㄉㄠˋ)選(ㄒㄩㄢˇ)單(ㄉㄢ)</button>
+        <div class="badge" id="worldTitle"></div>
+      </div>
+
+      <div class="card">
+        <h2 class="h2" id="missionTitle"></h2>
+        <p class="mantra" id="mantra"></p>
+      </div>
+
+      <div class="card" id="activity"></div>
+      <div class="card" id="quiz"></div>
+
+      <div class="footerRow">
+        <button class="primary" id="nextBtn">下(ㄒㄧㄚˋ)一(ㄧ)步(ㄅㄨˋ)</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
